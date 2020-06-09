@@ -42,7 +42,7 @@ class DollarTest {
     }
 }
 
-class Dollar(amount: Int): Money(amount) {
+class Dollar(amount: Int): Money(amount, "USD") {
     override operator fun times(multiplier: Int): Money {
         return Dollar(amount * multiplier)
     }

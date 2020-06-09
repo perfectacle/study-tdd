@@ -42,7 +42,7 @@ class FrancTest {
     }
 }
 
-class Franc(amount: Int): Money(amount) {
+class Franc(amount: Int): Money(amount, "USD") {
     override operator fun times(multiplier: Int): Money {
         return Franc(amount * multiplier)
     }
